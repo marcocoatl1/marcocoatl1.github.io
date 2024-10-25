@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+        <link rel="stylesheet" href="../css1/style.page.css" type="text/css">
+        <style type="text/css">
+            #Tabla1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+            }
+            #Tabla1 th {
+    background-color: #B9CEB8;
+    color: #0F2F3F;
+    padding: 5px;
+            }
+            #Tabla1 td {
+    background-color: #f7f1e1;
+    color: #0F2F3F;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #F8F8F8;
+    margin: 10px;
+    padding: 4px;
+            }
+            #Tabla2 th {
+    color: #0F2F3F;
+    background-color: #B9CEB8;
+    border-width: 1px;
+            }
+            #Tabla2 td {
+    color: #0F2F3F;
+    height: 30px;
+    padding: 10px;
+    border-width: 1px;
+            }
+            #Tabla2 {
+                width: 700px;
+                border-color: #855e6e;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .celda_centrada {
+                text-align: center;
+                padding: 0px;
+                background-color: #ffdbd7;
+            }
+            .tabla_dos {
+                border-color: #855e6e;
+                border-width: 2px;
+                border-collapse: collapse;
+                border-style: solid;
+                margin: 0 auto;
+            }
+            .tabla_dos td {
+                width: 150px;
+                border-color: #855e6e;
+                padding: 10px;
+                border-style: dashed;
+            }
+            .tabla_dos th {
+                border-style: dashed;
+                border-color: #ffdbd7;
+            }
+            .tabla_dos td {
+                background-color: #f7f1e1;
+            }
+            #TablaZebra {
+    width: 100%;
+    border: 0px none #B9CEB8;
+    border-collapse: collapse;
+            }
+            #TablaZebra th {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #f7f1e1;
+                padding: 5px;
+            }
+            #TablaZebra tbody td {
+    padding: 5px;
+    border: 1px solid #0F2F3F;
+            }
+            #TablaZebra tbody tr:nth-child(even) {
+    background-color: #ffdbd7;
+    color: darkblue;
+            }
+            #TablaZebra tbody tr:nth-child(odd) {
+                background-color: #f7f1e1;
+                color: crimson;
+            }
+            #TablaZebra thead tr {
+    background-color: #B9CEB8;
+    color: #0F2F3F;
+            }
+            .tabla_hover {
+                width: 80%;
+                margin: 0 auto;
+                border-style: solid;
+                border-color: aliceblue;
+                border-collapse: collapse;
+            }
+            .tabla_hover tbody tr {
+                background-color: #f7f1e1;
+                color: #855e6e;
+            }
+            .tabla_hover tbody td {
+                padding: 8px;
+            }
+            .tabla_hover thead th {
+                background-color: #ce7095;
+                color: #f7f1e1;
+                padding: 5px;
+            }
+            .tabla_hover tbody tr:hover {
+                background-color: #ffdbd7;
+                color: #ce7095;
+            }
+        </style>
+        <link href="../css/style p.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Tablas</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="enlace.html">ENLACES</a></li>
+                <li><a href="listas.html">LISTAS</a></li>
+                <li><a href="imagenes.html">IMÁGENES</a></li>
+                <li><a href="tablas.html">TABLAS</a></li>
+                <li><a href="audio.html">AUDIO</a></li>
+                <li><a href="video.html">VIDEO</a></li>
+                <li><a href="formularios.html">FORMULARIOS</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto;">
+                <h2 id="t1">Tabla Tipo 1</h2>
+                <p></p>
+                <table border="1" id="Tabla1">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Apellido paterno</th>
+                            <th>Apellido materno</th>
+                            <th>Colegio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>202145687</td>
+                            <td>Diego</td>
+                            <td>López</td>
+                            <td>Martínez</td>
+                            <td>Ingeniería</td>
+                        </tr>
+                        <tr>
+                            <td>202078167</td>
+                            <td>Andrea</td>
+                            <td>Pérez</td>
+                            <td>Ramírez</td>
+                            <td>Derecho</td>
+                        </tr>
+                        <tr>
+                            <td>202099587</td>
+                            <td>José</td>
+                            <td>González</td>
+                            <td>Sánchez</td>
+                            <td>Medicina</td>
+                        </tr>
+                        <tr>
+                            <td>202076487</td>
+                            <td>Sofía</td>
+                            <td>Hernández</td>
+                            <td>Luna</td>
+                            <td>Arquitectura</td>
+                        </tr>
+                        <tr>
+                            <td>202012457</td>
+                            <td>Juan</td>
+                            <td>Rojas</td>
+                            <td>Torres</td>
+                            <td>Diseño Gráfico</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+                <h2 id="t2">Tabla Tipo 2</h2>
+                <p></p>
+                <table id="Tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">Nombre</th>
+                            <th style="width: 125px;">Edad</th>
+                            <th style="width: 175px;" colspan="2">Teléfono</th>
+                            <th style="width: 200px;">Cooperación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diego López</td>
+                            <td style="text-align: center; padding: 0px;">23</td>
+                            <td>2223456789</td>
+                            <td>2223456789</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$150</td>
+                        </tr>
+                        <tr>
+                            <td>Andrea Pérez</td>
+                            <td style="text-align: center; padding: 0px;">21</td>
+
+                            <td>2229876543</td>
+                            <td>2229876543</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                        </tr>
+                        <tr>
+                            <td>José González</td>
+                            <td style="text-align: center; padding: 0px;">22</td>
+                            <td>2221345678</td>
+                            <td>2221345678</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$75</td>
+                        </tr>
+                        <tr>
+                            <td>Sofía Hernández</td>
+                            <td style="text-align: center; padding: 0px;">24</td>
+                            <td>2227654321</td>
+                            <td>2227654321</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$120</td>
+                        </tr>
+                        <tr>
+                            <td>Juan Rojas</td>
+                            <td style="text-align: center; padding: 0px;">23</td>
+                            <td>2221357902</td>
+                            <td>2221357902</td>
+                            <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Zebra</h2>
+                <table id="TablaZebra">
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Género</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>203145678</td>
+                            <td>Carmen Reyes</td>
+                            <td>24</td>
+                            <td>Femenino</td>
+                        </tr>
+                        <tr>
+                            <td>203056789</td>
+                            <td>Luis Méndez</td>
+                            <td>22</td>
+                            <td>Masculino</td>
+                        </tr>
+                        <tr>
+                            <td>203078912</td>
+                            <td>Daniela Ríos</td>
+                            <td>23</td>
+                            <td>Femenino</td>
+                        </tr>
+                        <tr>
+                            <td>203091234</td>
+                            <td>Jorge Paredes</td>
+                            <td>24</td>
+                            <td>Masculino</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>Elaborado por Marco Antonio Coatl</p>
+        </footer>
+    </body>
+</html>

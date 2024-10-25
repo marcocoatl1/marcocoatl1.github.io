@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Secciones con Imágenes</title>
+    <style>
+        .float-left {
+            float: left;
+            margin-right: 20px;
+        }
+        .float-right {
+            float: right;
+            margin-left: 20px;
+        }
+        
+        .background-image {
+    position: relative;
+    background-image: url("../medios/imagenes/spotlights-illuminate-with-empty-stage.jpg");
+    background-size: contain;
+    background-position: center;
+    color: white;
+    padding-top: 19px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-bottom: 19px;
+    text-align: center;
+    overflow: hidden;
+        }
+        
+        .background-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+    
+        .background-image h2,
+        .background-image p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-link img {
+            border: 2px solid #000;
+        }
+
+        .image-filter img {
+            filter: grayscale(100%);
+        }
+    </style>
+    <link href="../css/style p.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>IMAGENES</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="enlace.html">ENLACES</a></li>
+            <li><a href="listas.html">LISTAS</a></li>
+            <li><a href="imagenes.html">IMÁGENES</a></li>
+            <li><a href="tablas.html">TABLAS</a></li>
+            <li><a href="audio.html">AUDIO</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+            <li><a href="formularios.html">FORMULARIOS</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Imagen PNG</h2>
+        <p>el logotipo de mi marca artistica es un niño con el mero estilo del rap del 2017.</p>
+        <img src="../medios/imagenes/maick Blanco.png" alt="Imagen PNG de ejemplo" width="300">
+    </section>
+
+    <section>
+        <h2>Imagen GIF</h2>
+        <p>si yo fuera gif seria este.</p>
+        <img src="../medios/imagenes/giphy.gif" alt="Imagen GIF de ejemplo" width="300">
+    </section>
+
+    <section>
+        <h2>Imagen Flotante Izquierda</h2>
+        <img src="../medios/imagenes/disfruta.jpg" alt="Imagen flotante izquierda" width="200" class="float-left">
+        <p>como lo pueden apreciar esta es una portada de mi disco, de la cancion disfruta que encontrararn en la parte de audio.</p>
+        <div style="clear: both;"></div>
+    </section>
+
+    <section>
+        <h2>Imagen Flotante Derecha</h2>
+        <img src="../medios/imagenes/sueña1.png" alt="Imagen flotante derecha" width="200" class="float-right">
+        <p>y esta es mi primer portada musical de una discografia , es elaborada por mauricio carreto. diseñador grafico muy popular en los ultimos años.</p>
+        <div style="clear: both;"></div>
+    </section>
+
+  
+    <section class="background-image"> 
+        <h2>Imagen de Fondo</h2>
+        <p>en algun punto de mi vida estoy muy seguro que los ecenarios son fundamental para mi existencia.</p>
+    </section>
+
+    <section>
+        <h2>Imagen con Vínculo</h2>
+        <p>asi es como me imagino en un futoro , conciertos y musica 24/7</p>
+        <a href="https://www.google.com" class="image-link">
+            <img src="../medios/imagenes/I.O.-Underground-at-Roots-1.webp" alt="Imagen con vínculo" width="300">
+        </a>
+    </section>
+
+    <footer>
+        <h5>Elaborado por Marco Antonio Coatl</h5>
+    </footer>
+</body>
+</html>

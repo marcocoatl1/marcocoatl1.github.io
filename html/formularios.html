@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FORMULARIOS EN HTML</title>
+<link href="../css/style_p.css" rel="stylesheet" type="text/css">
+<link href="../css/style p.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>FORMULARIOS</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="../index.html">INICIO</a></li>
+    <li><a href="enlace.html">ENLACES</a></li>
+    <li><a href="listas.html">LISTAS</a></li>
+    <li><a href="imagenes.html">IMÁGENES</a></li>
+    <li><a href="tablas.html">TABLAS</a></li>
+    <li><a href="audio.html">AUDIO</a></li>
+    <li><a href="video.html">VIDEO</a></li>
+    <li><a href="formularios.html">FORMULARIOS</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- Primer formulario de inicio de sesión -->
+<section>
+  <h2>Formulario de Inicio de Sesión</h2>
+  <p>Este formulario permite al usuario ingresar con su nombre de usuario y contraseña.</p>
+  <form>
+    <label for="usuario">USUARIO:</label>
+    <input type="text" id="usuario" name="usuario" required>
+
+    <label for="password">CONTRASEÑA:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+
+<section>
+  <h2>Formulario de Contacto</h2>
+  <p>Utiliza este formulario para contactarnos, deja tus datos y tu mensaje.</p>
+  <form>
+    <label for="nombre">NOMBRE:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">CORREO ELECTRÓNICO:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">MENSAJE:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+
+<section>
+  <h2>Formulario de Registro</h2>
+  <p>Completa este formulario para registrarte en nuestra plataforma.</p>
+  <form>
+    <label for="nombre-registro">NOMBRE COMPLETO:</label>
+    <input type="text" id="nombre-registro" name="nombre-registro" required>
+
+    <label for="correo">CORREO ELECTRÓNICO:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="telefono">TELÉFONO:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="pais">PAÍS:</label>
+    <select id="pais" name="pais">
+      <option value="mexico">México</option>
+      <option value="usa">Estados Unidos</option>
+      <option value="canada">Canadá</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label for="password-registro">CONTRASEÑA:</label>
+    <input type="password" id="password-registro" name="password-registro" required>
+
+    <label for="password-confirm">CONFIRMAR CONTRASEÑA:</label>
+    <input type="password" id="password-confirm" name="password-confirm" required>
+
+    <input type="submit" value="Registrarse">
+  </form>
+</section>
+
+
+<section>
+  <h2>Formulario de Encuesta</h2>
+  <p>Ayúdanos a mejorar respondiendo esta encuesta rápida.</p>
+  <form>
+    <label>¿Cómo calificarías nuestro servicio?</label>
+    <input type="radio" id="excelente" name="calificacion" value="excelente">
+    <label for="excelente">Excelente</label>
+    
+    <input type="radio" id="bueno" name="calificacion" value="bueno">
+    <label for="bueno">Bueno</label>
+    
+    <input type="radio" id="regular" name="calificacion" value="regular">
+    <label for="regular">Regular</label>
+    
+    <input type="radio" id="malo" name="calificacion" value="malo">
+    <label for="malo">Malo</label>
+
+    <label for="sugerencias">Sugerencias o comentarios:</label>
+    <textarea id="sugerencias" name="sugerencias" rows="4"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <h5>Elaborado por Marco Antonio Coatl</h5>
+</footer>
+</body>
+</html>
+
